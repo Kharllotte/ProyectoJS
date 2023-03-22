@@ -5,12 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
+        <div class="container-fluid" style="background-color: #9f9ea19e">
+          <a class="navbar-brand" href="index.html"><img src="./media/compras.png" alt="inicial"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Celulares</a></li>
+                  <li><a class="dropdown-item" href="#">Computadores</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+    <header></header>
+    <main>
+        <div class="container-md" style="margin-top: 40px;">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center">
+                    <img src="https://cdn1.coppel.com/images/catalog/pm/2907413-1.jpg" class="card-img-top" style="margin: 45px 0px;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">iPhone 14</h5>
+                      <p class="card-text">$4.949.000 COP</p>
+                      <a href="#" class="btn btn-primary">Comprar ahora</a>
+                      <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                      <img src="https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-6206281_823x.jpg?v=1661520210" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">iPhone 13</h5>
+                        <p class="card-text">$4.289.000 COP</p>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                      <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71hIfcIPyxS._SL1500_.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">iPhone 12</h5>
+                        <p class="card-text">$3.669.000 COP</p>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 text-center">
+                      <img src="https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F422%2FMARKETPLACE%20INTERNACIONAL%2FUF06174_1%20.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=49668a50818dddd1878a1609163f9f0b" class="card-img-top" style="margin: 50px 0px;" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Galaxy S22</h5>
+                        <p class="card-text">$3.669.000 COP</p>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 text-center">
+                      <img src="https://exitocol.vtexassets.com/arquivos/ids/7119542/celular-samsung-galaxy-s21-ultra-256gb-108mp-12ram-5g-negro.jpg?v=637517944341930000" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Galaxy S21</h5>
+                        <p class="card-text">$3.669.000 COP</p>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 text-center">
+                      <img src="https://i0.wp.com/conectamos.shop/wp-content/uploads/2021/08/samsung_galaxy_s20_fe_g780_6gb_128gb_ds_03_verde_ad_l.jpg?fit=800%2C800&ssl=1G$" class="card-img-top" style="padding: 15px 0px 10px 0px;" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Galaxy S20 FE</h5>
+                        <p class="card-text">$2.699.000 COP</p>
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                        <a href="#" class="btn btn btn-outline-primary">Agregar al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+        </div>
+    </main>
+    <aside>
+        <div class="container-fluid">
 
+        </div>
+    </aside>
+    <footer>
+        <h2>© 2023 Liliana Forero</h2>
+            
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
