@@ -20,6 +20,8 @@ const countProducts = document.querySelector ('#contador-productos')
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+const buttonBuy = document.querySelector('.btn-buy');
+
 productsList.addEventListener('click', e => {
 
     if(e.target.classList.contains('btn-add-card')){
@@ -68,7 +70,6 @@ rowProduct.addEventListener('click', e => {
     }
 
 })
-
 
 
 // Funcion para mostrar HTML
@@ -127,3 +128,16 @@ const showHTML = () => {
     countProducts.innerText = totalOfProducts;
 
 };
+
+buttonBuy.addEventListener('click', e => {
+    Swal.fire({
+        title: '¡Felicidades!',
+        text: 'Compra realizada',
+        icon: 'success',
+        timer: 4000,
+        // timerProgressBar: true,
+        buttonsStyling : true,
+        showCloseButton: true,
+        closeButtonAriaLabel: 'cerrar alerta',
+    })
+})
