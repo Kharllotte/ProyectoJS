@@ -6,6 +6,8 @@ btnCart.addEventListener('click', () => {
 })
 
 const cartInfo = document.querySelector('.cart-product')
+// Obtener todos los elementos con la clase "card-title"
+let cartTitle = document.querySelectorAll(".card-title");
 const rowProduct = document.querySelector('.row-product')
 
 //Lista de los contenedores de productos
@@ -169,5 +171,39 @@ for (const buttonBuy of buttonBuyList) {
 
 //Buscar si existe el celular
 buttonSearch.addEventListener('click', search_product => {
-    let busqueda = prompt("Ingrese el nombre del celular que esta buscando:");
+
+    // Solicitar al usuario que ingrese el celular que busca
+    let phone = prompt("Por favor, ingrese el celular que esta buscando:");
+
+    // Iterar sobre los títulos de las tarjetas y verificar si el nombre buscado se encuentra en alguno de ellos
+    let encontrado = false;
+    for(let i = 0; i < cartTitle.length; i++) {
+    if(cartTitle[i].textContent === phone) {
+        encontrado = true;
+        break;
+    }
+    }
+    
+    // Mostrar el resultado en una ventana emergente
+    if(encontrado) {
+        alert("El celular, " + phone + " se encuentra en una tarjeta.");
+        } else {
+            alert("El celular, " + phone + " no se encuentra en ninguna tarjeta.");
+            }
+            
+    // if(encontrado) {
+    //     Swal.fire({
+    //       icon: 'success',
+    //       title: 'Celular encontrado',
+    //       text: 'El celular, ' + phone + ' se encuentra en una tarjeta.',
+          
+    //     });
+    //   } else {
+    //     Swal.fire({
+    //       icon: 'error',
+    //       title: 'Celular no encontrado',
+    //       text: 'El celular, ' + phone + ' no se encuentra en ninguna tarjeta.'
+    //     });
+    //   }
+
 })
