@@ -20,7 +20,10 @@ const countProducts = document.querySelector ('#contador-productos')
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
-const buttonBuy = document.querySelector('.btn-buy');
+const buttonBuyList = document.querySelectorAll('.btn-buy');
+
+const buttonSearch = document.querySelector('.btn-search');
+
 
 productsList.addEventListener('click', e => {
 
@@ -129,15 +132,42 @@ const showHTML = () => {
 
 };
 
-buttonBuy.addEventListener('click', e => {
-    Swal.fire({
-        title: '¡Felicidades!',
-        text: 'Compra realizada',
-        icon: 'success',
-        timer: 4000,
-        // timerProgressBar: true,
-        buttonsStyling : true,
-        showCloseButton: true,
-        closeButtonAriaLabel: 'cerrar alerta',
+//Alerta al "comprar ahora"
+
+//forEach
+// buttonBuyList.forEach(buttonBuy => {
+//     buttonBuy.addEventListener('click', e => {
+//         Swal.fire({
+//             title: '¡Felicitaciones!',
+//             text: 'Compra realizada',
+//             icon: 'success',
+//             timer: 4000,
+//             timerProgressBar: true,
+//             buttonsStyling : true,
+//             showCloseButton: true,
+//             closeButtonAriaLabel: 'cerrar alerta',
+//         })
+//     })
+// })
+
+//for of
+for (const buttonBuy of buttonBuyList) {
+    buttonBuy.addEventListener('click', e => {
+        Swal.fire({
+            title: '¡Felicitaciones!',
+            text: 'Compra realizada',
+            icon: 'success',
+            timer: 4000,
+            timerProgressBar: true,
+            buttonsStyling : true,
+            showCloseButton: true,
+            closeButtonAriaLabel: 'cerrar alerta',
+        })
     })
+}
+
+
+//Buscar si existe el celular
+buttonSearch.addEventListener('click', search_product => {
+    let busqueda = prompt("Ingrese el nombre del celular que esta buscando:");
 })
