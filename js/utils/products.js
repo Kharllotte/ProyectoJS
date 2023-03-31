@@ -31,6 +31,16 @@ const products = [
     },
 ]
 
+
+
+const prod = {
+    id:1,
+    price: [
+        {usd: 10},
+        {cop: 20},
+    ] 
+}
+
 const htmlTest = document.getElementById("container-products");
 let html = "";
 
