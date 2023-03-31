@@ -144,9 +144,9 @@ const showHTML = () => {
 
         containerProduct.innerHTML = `
             <div class="info-cart-product">
-                <button class="btn-increment-quantity btn btn-secondary" style="width:10px, height:10px">+</button>
-                <span class="cantidad-producto-carrito">${product.quantity}</span>
                 <button class="btn-decrease-quantity btn btn-secondary">-</button>
+                <span class="cantidad-producto-carrito">${product.quantity}</span>
+                <button class="btn-increment-quantity btn btn-secondary">+</button>
                 <p class="titulo-producto-carrito">${product.title}</p>
                 <span class="precio-producto-carrito">$${product.price}</span>
             </div>
@@ -258,3 +258,4 @@ buttonSearch.addEventListener('click', search_product => {
     }
 
 })
+
